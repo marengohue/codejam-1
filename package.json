@@ -1,0 +1,21 @@
+{
+  "name": "codejam-1",
+  "version": "1.0.0",
+  "description": "**Задание #1. Функция \"sumOfOther\"**.",
+  "main": "sumOfOther.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marengohue/codejam-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marengohue/codejam-1/issues"
+  },
+  "homepage": "https://github.com/marengohue/codejam-1#readme",
+  "devDependencies": {
+  }
+}
