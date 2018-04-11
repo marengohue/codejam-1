@@ -20,3 +20,14 @@ module.exports = function sumOfOther(args) {
         }, emptySymbol);
     });
 }
+
+// The simplest implementation that only works for arrays of numbers
+// (According to the spec in README.md)
+function sumOfOtherNumbers(args) {
+    if (!Array.isArray(args)) {
+        throw new TypeError('Expected array as first argument.');
+    }
+    
+    const sum = args.reduce((acc, val) => acc + val);
+    return args.map((val) => sum - val);
+}
