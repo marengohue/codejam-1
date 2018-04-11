@@ -3,6 +3,10 @@ module.exports = function sumOfOther(args) {
         throw new TypeError('Expected array as first argument.');
     }
 
+    // An implementation that avoids the usage of subtraction operator since it
+    // is not really possible to subtract a string out of another string.
+    // This works for strings as well (cause reasons and stuff and things) - see
+    // ../test/test.js for details
     return args.map((val, index) => {
         const emptySymbol = Symbol();
         return args.reduce((acc, val, sumIndex) => {
