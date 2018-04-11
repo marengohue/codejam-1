@@ -13,6 +13,10 @@ module.exports = function sumOfOther(args) {
             return index == sumIndex
                 ? acc
                 : (acc == emptySymbol ? val : acc + val);
+        // Had to do empty symbol shenanigans (provide initial value)
+        // so that .reduce doesn't skip the first value in the args
+        // when aggregating. Symbol would be the only meaningless value that we
+        // can safely discard as a non-user input.
         }, emptySymbol);
     });
 }
