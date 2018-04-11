@@ -1,7 +1,7 @@
 {
   "name": "codejam-1",
   "version": "1.0.0",
-  "description": "**Задание #1. Функция \"sumOfOther\"**.",
+  "description": "RS School CodeJam 1 - make.js, sumOfOther.js",
   "main": "sumOfOther.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha ./test/test.js"
@@ -17,5 +17,6 @@
   },
   "homepage": "https://github.com/marengohue/codejam-1#readme",
   "devDependencies": {
+    "mocha": "^5.0.5"
   }
 }
